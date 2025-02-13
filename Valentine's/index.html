@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Valentine 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Screen 1: Welcome -->
+        <div class="screen" id="screen1">
+            <h1>Happy Valentine's Day, Sameekshyaaaaaaaaaa! 💌</h1>
+            <p class="message">You mean the world to me. Here's a little something to show how much I care. 💕</p>
+            <button class="nextBtn" onclick="showScreen('screen2')">Next ➡️</button>
+        </div>
+
+        <!-- Screen 2: Photo Gallery -->
+        <div class="screen hidden" id="screen2">
+            <h2>You're Beautiful 🌸</h2>
+            <p class="message">Here are some pictures of you that make my heart skip a beat. 💖</p>
+            <div class="gallery">
+                <img src="her1.jpg" alt="Her Picture 1">
+                <img src="her2.jpg" alt="Her Picture 2">
+                <img src="her3.jpg" alt="Her Picture 3">
+            </div>
+            <button class="backBtn" onclick="showScreen('screen1')">⬅️ Back</button>
+            <button class="nextBtn" onclick="showScreen('screen3')">Next ➡️</button>
+        </div>
+
+        <!-- Screen 3: Love Letter -->
+        <div class="screen hidden" id="screen3">
+            <h2>My 💖 Letter to You 💌</h2>
+            <p>Dear Sam 🦋, My Pookie, Sweetie, Cutie, and Everything in Between,</p>
+            <p>From the moment you came into my life, everything changed. You brought a light so bright that it outshone
+                every shadow, and a warmth so comforting that it melted every worry away. You’re not just my love;
+                you’re my best friend, my confidant, and my greatest adventure.</p>
+            <p><strong>Sam</strong>, you’re the one who makes my heart race with just a smile.<br>
+                <strong>Pookie</strong>, you’re the one who turns ordinary days into extraordinary memories.<br>
+                <strong>Sweetie</strong>, you’re the one who makes me believe in magic because loving you feels like a
+                fairytale.<br>
+                <strong>Cutie</strong>, you’re the one who makes my world brighter just by being in it.
+            </p>
+            <p>I don’t need pictures of us together to know how much you mean to me. Every moment with you, whether it’s
+                a laugh, a conversation, or even a quiet glance, is etched in my heart forever. You’re my favorite
+                person, my safe place, and my forever.</p>
+            <p>I love the way you light up a room with your laughter. I love how you care so deeply about the people you
+                love. And most of all, I love how you make me feel like the luckiest person in the world just by being
+                you.</p>
+            <p>This Valentine’s Day, I want you to know that my love for you isn’t just today—it’s every day. It’s in
+                the little things, the big moments, and everything in between. You’re my always and forever, and I can’t
+                wait to create so many more memories with you.</p>
+            <p>Yours always and forever,<br> Priyabrata 🧸💖</p>
+            <button class="backBtn" onclick="showScreen('screen2')">⬅️ Back</button>
+            <button class="nextBtn" onclick="showScreen('screen4')">Next ➡️</button>
+        </div>
+
+        <!-- Screen 4: Surprise -->
+        <div class="screen hidden" id="screen4">
+            <h2>Just for You 🎁</h2>
+            <p class="message">Click the button below for a special surprise! 💕</p>
+            <button id="surpriseBtn">Click Me! 💖</button>
+            <p id="surpriseText" class="hidden">I love you more than anything! 🦋😘💕</p>
+            <button class="backBtn" onclick="showScreen('screen3')">⬅️ Back</button>
+        </div>
+
+        <!-- Decorative Emojis -->
+        <div class="emoji-stickers">
+            <span class="emoji">💖</span>
+            <span class="emoji">🌸</span>
+            <span class="emoji">💌</span>
+            <span class="emoji">😍</span>
+            <span class="emoji">💕</span>
+            <span class="emoji">✨</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
