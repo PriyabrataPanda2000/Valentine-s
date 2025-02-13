@@ -16,3 +16,11 @@ surpriseBtn.addEventListener('click', () => {
     surpriseText.classList.remove('hidden');
     surpriseBtn.textContent = "You're the best! 💖";
 });
+
+const audio = document.querySelector('audio');
+const muteBtn = document.getElementById('muteBtn');
+
+function toggleMute() {
+  audio.muted = !audio.muted;
+  muteBtn.textContent = audio.muted ? "🔊 Unmute" : "🔇 Mute";
+}
